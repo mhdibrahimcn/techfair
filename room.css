@@ -1,0 +1,300 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+  }
+  html,body{
+    width:100%;
+    height:100%;
+  
+  }
+  .main{
+  
+   
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5px 2px #c2918e;
+    line-height: 1.4;
+    border-bottom-left-radius:2px;
+    border-bottom-right-radius:2px;
+  
+  
+   overflow-y: hidden;
+  }
+  
+  .navbar {
+      height: 70px !important; /*i assume your navbar size 100px*/
+  }
+  #icon{
+      width:30px;
+      padding-right: 1px;
+     
+  }
+  #font{
+      font-weight: 400;
+      font-size: 120%;
+  
+      
+  }
+  ul li{
+    list-style:none;
+    margin:0 10px;
+    transition:0.5s;
+  }
+  .navbar-nav a.active{
+    border-bottom: 2px solid #f0f0f0ed;
+    border-radius: 2px;
+  
+  
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+  *
+  .navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+  .corrotext{
+    width: 100%;
+    height: 100%;
+    color: #f8f2f2;
+   border-radius: 5%;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .guestroom{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    background-image: linear-gradient(45deg,#f3e9b4 3%,  #CE8148 100%);
+    
+    
+  }
+  .guestroom p{
+    font-size: x-large;
+    color: #4e4040;
+  }
+  .guestroom h3{
+    padding-top: 1%;
+    color: #2f2a2a;
+    font-weight: 600;
+   
+  }
+  .flex{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .cards{
+
+    width: 94%;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  height: auto;
+  border-radius: 1em;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  text-align: center;
+  margin: 20px 40px ;
+  
+  }
+  .cards img{
+    object-fit: cover;
+  height: 275px;
+  width: 474px;
+  border-radius: 5%;
+   box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+   float: left;
+}
+.roomdetail{
+  margin-top: 4%;
+  width: 90%;
+  margin-left: 3%;
+
+}
+.roomdetail h3{
+  font-weight: 500;
+  font-size: 2.2em;;
+
+}
+.roomdetail p{
+  color: #524c4c;
+  font-weight: 350;
+  font-size: 1.3em;
+ 
+}
+
+.roomicon img{
+
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+.roomicon p{
+  float: left;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.roomicon h2{
+
+  float: right;
+  margin-top: 2%;
+  margin-right:2% ;
+
+}
+.roomicon h5{
+  float: right;
+  margin-top: 3%;
+  color: #6c5b5b;
+
+
+}
+
+.ics{
+  
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-left: 4%;
+  margin-top: 2%;
+  position: relative;
+  float: left;
+}
+.roomicon button{
+  float: right;
+  margin-top: 9%;
+  margin-left:21% ;
+  color: #ede5e5;
+  border-radius: 8%;
+  background-color: #CE8148;
+  box-shadow: 0 0 5px 2px#CE8148;
+  border:#CE8148;
+}
+.roomicon button:hover{
+  background-color:  #c3b983 ;
+  box-shadow: 0 0 5px 2px  #c3b983 ;
+  border: #c3b983;
+}
+.btttn{
+  float: right;
+  background-color: #f8f2f2;
+}footer {
+  background: linear-gradient(45deg,#f3e9b4 3%,  #CE8148 100%);
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+
+}
+.wrapper img{
+  width: 30px;
+  height: 30px;
+}
